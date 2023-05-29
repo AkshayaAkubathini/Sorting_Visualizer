@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span>
+            Number of Elements:
+            <input id="arr_sz" type="range" min="10" max="100" step="1" value="60">
+        </span>
+        <button id="generate-btn">Generate Array</button>
+        <button id="bubble-sort-btn">Bubble Sort</button>
+        <button id="selection-sort-btn">Selection Sort</button>
+        <button id="insertion-sort-btn">Insertion Sort</button>
+        <button id="quick-sort-btn">Quick Sort</button>
+        <button id="merge-sort-btn">Merge Sort</button>
+    </nav>
+    <nav class="navbar speed">
+        <span>
+            Time:
+            <input id="speed-input" type="speed" min="100" max="5000" step="1" value="50">
+            <button id="decrease-speed-btn">-</button>
+            <span id="speed-label"></span>
+            <button id="increase-speed-btn">+</button>
+        </span>
+    </nav>
+    
+    <div id="visualization-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
